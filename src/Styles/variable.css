@@ -1,0 +1,50 @@
+.text-center{
+    text-align: center;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+.rounded{
+    border-radius: 20px;
+}
+.text-white{
+    color: white;
+}
+#no-display{
+    visibility: hidden;
+}
+#block{
+    visibility: visible;
+}
+@media screen and (max-width: 576px) {
+    .judul{
+        font-size: 16pt;
+    }
+    .subjudul{
+        font-size: 13pt;
+        text-align: center;
+    }
+    .card-text h3{
+        font-size: 12pt;
+    }
+    .card-text p{
+        font-size: 9pt;
+    }
+}
+@media screen and (min-width: 576px) {
+    .judul{
+        font-size: 18pt;
+    }
+    .subjudul{
+        font-size: 13pt;
+        text-align: center;
+    }
+    .card-text h3{
+        font-size: 13pt;
+    }
+    .card-text p{
+        font-size: 11pt;
+    }
+}

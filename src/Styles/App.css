@@ -1,0 +1,311 @@
+/* Landing */
+.landing-container .landing {
+ display: grid;
+}
+.landing-container .landing > div:nth-child(2) > div:nth-child(2) a {
+ border-radius: 20px;
+ background-color: #db6262;
+}
+/* Gallery */
+.App .gallery {
+ display: grid;
+ gap: 10px;
+}
+.App .gallery .img {
+ transition: all 0.5s ease-in-out;
+ display: flex;
+ position: relative;
+ justify-content: center;
+ align-items: center;
+}
+.App .gallery .img::before {
+ content: '';
+ position: absolute;
+}
+.App .gallery .img::after {
+ content: attr(data-name);
+ position: absolute;
+}
+.App .gallery .img:hover {
+ transform: scale(20px);
+ border-radius: 40px;
+ filter: grayscale(100%);
+}
+.App .gallery .img:hover ~ .App .gallery .img img {
+ display: none;
+}
+/* Layout */
+.grid-layout {
+ display: grid;
+}
+.grid-layout > div {
+ display: grid;
+}
+
+/* Card */
+.card {
+ display: grid;
+ text-align: center;
+ background-color: #C7DAD9;
+ border-radius: 20px;
+ padding: 15px;
+ width: 10rem;
+ overflow: hidden;
+ margin: 0 5px;
+}
+.card .card-header {
+ margin: 0 auto;
+}
+.card .card-header img {
+ width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+ /* Landing */
+ .landing-container {
+  padding: 3rem 1rem;
+  background: url(../assets/banner1.jpg);
+ }
+ .landing-container .landing {
+  grid-template-columns: 1fr;
+ }
+ .landing-container .landing > div:nth-child(1) {
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto;
+  margin: 0 auto;
+ }
+ .landing-container .landing > div:nth-child(1) > div p {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+ }
+ .landing-container .landing > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+ .landing-container .landing > div:nth-child(2) > div:nth-child(1) {
+  width: 50%;
+ }
+ .landing-container .landing > div:nth-child(2) > div:nth-child(1) img {
+  width: 100%;
+ }
+ .landing-container .landing > div:nth-child(2) > div:nth-child(2) {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+  }
+
+ /* Gallery */
+ .App .gallery {
+  padding: 10px 3rem;
+  grid-template-columns: repeat(2, 1fr);
+ }
+ /* Grid layout */
+ .grid-layout > .keuntungan {
+  grid-template-columns: 1fr;
+ }
+ .grid-layout > .fasilitas,
+ .grid-layout > .bonus {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+ }
+ .grid-layout > .fasilitas > div {
+  width: 35%;
+  margin: 0 auto;
+ }
+ .grid-layout > .fasilitas > div img,
+ .grid-layout > .bonus > div img {
+  width: 100%;
+ }
+ .grid-layout > .bonus > div {
+  width: 30%;
+  color: white;
+  background: #db6262;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 30px;
+ }
+ /* Register */
+ .grid-layout > .register {
+  margin: 0 auto;
+ }
+ .grid-layout > .register > div p {
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  background: #45a8e0;
+  margin: 0 20px;
+  display: flex;
+ }
+ .grid-layout > .register > div.register-button {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+ }
+ .grid-layout > .register a {
+  background: #db6262;
+  padding: 10px 2rem;
+ }
+}
+@media screen and (min-width: 576px) {
+ /* Landing */
+ .landing-container {
+  padding: 3rem 6rem;
+  background: url(../assets/banner1.jpg);
+ }
+ .landing-container .landing {
+  grid-template-columns: 1fr;
+ }
+ .landing-container .landing > div:nth-child(1) {
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto;
+  margin: 0 auto;
+ }
+ .landing-container .landing > div:nth-child(1) > p {
+  font-size: larger;
+ }
+ .landing-container .landing > div:nth-child(1) > div p {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+ }
+ .landing-container .landing > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+ .landing-container .landing > div:nth-child(2) > div:nth-child(1) {
+  width: 50%;
+ }
+ .landing-container .landing > div:nth-child(2) > div:nth-child(1) img {
+  width: 100%;
+ }
+ /* Gallery */
+ .App .gallery {
+  padding: 10px 3rem;
+  grid-template-columns: repeat(4, 1fr);
+ }
+ /* Gridl ayout */
+ .grid-layout > .keuntungan {
+  grid-template-columns: 1fr;
+  justify-content: center;
+  margin: 0 auto;
+ }
+ .grid-layout > .fasilitas,
+ .grid-layout > .bonus {
+  grid-template-columns: repeat(3, 150px);
+  justify-content: center;
+  gap: 10px;
+ }
+ .grid-layout > .fasilitas > div,
+ .grid-layout > .bonus > div {
+  width: 35%;
+  margin: 0 auto;
+ }
+ .grid-layout > .fasilitas > div img,
+ .grid-layout > .bonus > div img {
+  width: 100%;
+ }
+ .grid-layout > .bonus > div {
+  /* width: 50%; */
+  color: white;
+  background: #db6262;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 15px 30px;
+ }
+ /* Card */
+ /* .card{
+
+ } */
+ .card .card-header {
+  width: 100%;
+ }
+ .card .card-header img{
+   width: 100%;
+ }
+ /* Register */
+ .grid-layout > .register {
+  margin: 0 auto;
+ }
+ .grid-layout > .register > div p {
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  background: #45a8e0;
+  margin: 0 20px;
+  display: flex;
+ }
+ .grid-layout > .register > div.register-button {
+  padding: 20px;
+  margin: 0 auto;
+ }
+ .grid-layout > .register a {
+  background: #db6262;
+  padding: 10px 9rem;
+ }
+}
+@media screen and (min-width: 992px) {
+ /* Landing Page */
+ .landing-container {
+  padding: 3rem 10rem;
+  background: url(../assets/banner1.jpg);
+ }
+ .landing-container .landing {
+  grid-template-columns: repeat(2, 1fr);
+ }
+ .landing-container .landing > div:nth-child(1) {
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto;
+  margin: 0 auto;
+ }
+ .landing-container .landing > div:nth-child(1) > p {
+  font-size: larger;
+ }
+ .landing-container .landing > div:nth-child(1) > div p {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+ }
+ .landing-container .landing > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+ .landing-container .landing > div:nth-child(2) > div:nth-child(1) {
+  width: 50%;
+ }
+ .landing-container .landing > div:nth-child(2) > div:nth-child(1) img {
+  width: 100%;
+ }
+ /* Gallery */
+ .App .gallery {
+  padding: 10px 3rem;
+  grid-template-columns: repeat(6, 1fr);
+ }
+ /* Grid layout */
+ .grid-layout > .keuntungan {
+  grid-template-columns: repeat(2, 1fr);
+ }
+ .grid-layout > .fasilitas {
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  padding: 0 10rem;
+  gap: 10px;
+ }
+ .grid-layout > .fasilitas > div {
+  width: 25%;
+  margin: 0 auto;
+ }
+ .grid-layout > .fasilitas > div img {
+  width: 100%;
+ }
+}
