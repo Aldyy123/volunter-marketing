@@ -2,12 +2,19 @@ import logo from '../assets/LOGO.png';
 import { Component } from 'react'
 import Countdown from 'react-countdown'
 import TimeCout, { timeEvents } from '../Base/TimeCout'
+import banner from '../assets/banner-demo.png'
 
 export default class LandingPage extends Component {
 
     render() {
         return (
+            
             <div className="landing-container text-white">
+                <div className="banner-demo" style={{
+                    width: '100%',
+                }}>
+                    <img style={{width: '100%'}} src={banner} alt="" />
+                </div>
                 <h1 className="text-center judul">30 Day Challange Digital Marketing</h1>
                 <h1 className="text-center judul-ke2">Bersama UMKM  Menuju Go Digital</h1>
                 <div className="landing">
