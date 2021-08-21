@@ -15,12 +15,12 @@ class App extends React.Component {
   render() {
     return (
       <div className='App'>
-        <LandingPage />
         <div className="banner-demo" style={{
           width: '100%',
         }}>
           <img style={{ width: '100%' }} src={banner} alt="" />
         </div>
+        <LandingPage />
         <TemplateGrid
           title={'Kenapa mengikuti acara ini ?'}
           subtitle={'Program ini 100% gratis serta didampingi oleh mentor yang berpengalaman dibidangnya.'}
