@@ -1,7 +1,7 @@
 
 function Card(props) {
     return (
-        <div className="card">
+        <div className="card" data-aos='fade-up' data-aos-duration='1500'>
             <div className="card-header">
                 <img src={props.img} alt="Logo" />
             </div>

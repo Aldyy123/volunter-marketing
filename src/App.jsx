@@ -11,13 +11,15 @@ import logo from './logo.svg'
 import { listOfData } from './Base/Data'
 import banner from './assets/banner-demo.png'
 
+
 class App extends React.Component {
   render() {
     return (
       <div className='App'>
-        <div className="banner-demo" style={{
-          width: '100%',
-        }}>
+        <div className="banner-demo" data-aos='fade-up' data-aos-easing="linear"
+          data-aos-duration="1500" style={{
+            width: '100%',
+          }}>
           <img style={{ width: '100%' }} src={banner} alt="" />
         </div>
         <LandingPage />
@@ -27,7 +29,8 @@ class App extends React.Component {
           backgroundColor={'#c7dad9'}
         >
           <div className='keuntungan coda'>
-            <ul>
+            <ul data-aos="fade-right" data-aos-easing="linear"
+              data-aos-duration="1500">
               <li>Buat Bisnismu Go-Digital</li>
               <li>Ilmu Copywriting</li>
               <li>Google My Bisnis</li>
@@ -43,7 +46,8 @@ class App extends React.Component {
               <li>Tiktok Marketing</li>
               <li>Mencari ide konten beserta penerapan konten kalender</li>
             </ul>
-            <ul>
+            <ul data-aos-easing="linear"
+              data-aos-duration="1500" data-aos='fade-left'>
               <li>Buka-bukaan strategi endorse di sosmed</li>
               <li>Jenis Media Marketplace Beserta Targetnya</li>
               <li>Cara Pemasaran di Tokopedia</li>
@@ -70,7 +74,7 @@ class App extends React.Component {
           <div className="gallery">
             {[1, 2, 3].map(e => {
               return (
-                <div className='img' key={e}>
+                <div className='img' key={e} data-aos='flip-left' data-aos-duration='1500' data-aos-easing='ease-in-cubic'>
                   <img src={logo} alt="" />
                 </div>
               )
@@ -85,7 +89,7 @@ class App extends React.Component {
           <div className='fasilitas coda'>
             {listOfData.map((e) => {
               return (
-                <div key={e.img}>
+                <div key={e.img} data-aos='flip-left' data-aos-duration='1500' data-aos-easing='ease-in-cubic'>
                   <img src={e.img} alt='s' />
                   <p className='text-center'>{e.text}</p>
                 </div>
@@ -93,9 +97,9 @@ class App extends React.Component {
             })}
           </div>
           <div className="fasilitas-text contrail-one">
-            <p className="center">Sangat terbuka untuk semua pihak, yang ingin berkolaborasi membantu UMKM dengan memberikan berbagai hal untuk UMKM.</p>
-            <p className="center">Baik berupa free endorse untuk UMKM, tools digital marketing, pendampingan berkelanjutan, exclusive mentoring, Dana untuk praktek iklan para UMKM, dll.</p>
-            <p className="center">Silakan hubungi kami di <a href="mailto: halo@agungprasetyo.id">halo@agungprasetyo.id</a></p>
+            <p data-aos='slide-left' data-aos-duration='1500' data-aos-easing='ease-in-cubic' className="center">Sangat terbuka untuk semua pihak, yang ingin berkolaborasi membantu UMKM dengan memberikan berbagai hal untuk UMKM.</p>
+            <p data-aos='slide-right' data-aos-duration='1500' data-aos-easing='ease-in-cubic' className="center">Baik berupa free endorse untuk UMKM, tools digital marketing, pendampingan berkelanjutan, exclusive mentoring, Dana untuk praktek iklan para UMKM, dll.</p>
+            <p data-aos='slide-down' data-aos-duration='1500' data-aos-easing='ease-in' className="center">Silakan hubungi kami di <a href="mailto: halo@agungprasetyo.id">halo@agungprasetyo.id</a></p>
           </div>
         </TemplateGrid>
         {/* <TemplateGrid title={'Bonus untuk yang mengikuti hingga Akhir Acara'}>
@@ -114,7 +118,7 @@ class App extends React.Component {
           <div className="support">
             {[1].map(e => {
               return (
-                <div className='img' key={e}>
+                <div className='img' key={e} data-aos='zoom-in-right' data-aos-duration='1500'>
                   <img src={logo} alt="" />
                 </div>
               )
@@ -126,15 +130,17 @@ class App extends React.Component {
             <p className='text-center'>
               Ayo daftar segera mumpung gratis gan jangan sampe ketinggalan, rugi loo
             </p>
-            <Countdown date={timeEvents} renderer={TimeCout} />
-            <div className="register-button">
+            <div data-aos='zoom-in-left' data-aos-duration='1500' data-aos-easing='ease-out-back'>
+              <Countdown date={timeEvents} renderer={TimeCout} />
+            </div>
+            <div className="register-button" data-aos='zoom-in-right' data-aos-duration='1500' data-aos-easing='ease-out-back'>
               <a href="/" className="button" >Amankan Kursi Sekarang</a>
             </div>
             <div className="last-text">
-              <p>
+              <p data-aos='zoom-in-down' data-aos-duration='1500' data-aos-easing='ease-in-out-sine'>
                 Sebelumnya saya ucapkan terima kasih banyak untuk semua mentor, volunter, media partner, sponsor, serta para peserta yang telah bergabung pada program <b>“30 Day Challenge Digital Marketing”</b> Bersama UMKM Menuju Go-Digital.
               </p>
-              <p className="text-center">
+              <p className="text-center" data-aos='zoom-in-down' data-aos-duration='1500' data-aos-easing='ease-in-out-sine'>
                 <b>Semoga kerjasama ini dapat terjalin dengan baik, sehingga ribuan UMKM akan Go-Digital dengan baik.</b>
               </p>
             </div>
