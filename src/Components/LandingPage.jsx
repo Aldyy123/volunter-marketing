@@ -10,13 +10,13 @@ export default class LandingPage extends Component {
         return (
             
             <div className="landing-container text-white">
+                <h1 className="text-center judul">30 Day Challange Digital Marketing</h1>
+                <h1 className="text-center judul-ke2">Bersama UMKM  Menuju Go Digital</h1>
                 <div className="banner-demo" style={{
                     width: '100%',
                 }}>
                     <img style={{width: '100%'}} src={banner} alt="" />
                 </div>
-                <h1 className="text-center judul">30 Day Challange Digital Marketing</h1>
-                <h1 className="text-center judul-ke2">Bersama UMKM  Menuju Go Digital</h1>
                 <div className="landing">
                     <div>
                         <p className="subjudul">
