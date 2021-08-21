@@ -9,13 +9,18 @@ import Countdown from 'react-countdown'
 import TimeCout, { timeEvents } from './Base/TimeCout'
 import logo from './logo.svg'
 import { listOfData } from './Base/Data'
+import banner from './assets/banner-demo.png'
 
 class App extends React.Component {
   render() {
     return (
       <div className='App'>
         <LandingPage />
-
+        <div className="banner-demo" style={{
+          width: '100%',
+        }}>
+          <img style={{ width: '100%' }} src={banner} alt="" />
+        </div>
         <TemplateGrid
           title={'Kenapa mengikuti acara ini ?'}
           subtitle={'Program ini 100% gratis serta didampingi oleh mentor yang berpengalaman dibidangnya.'}
