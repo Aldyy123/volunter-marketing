@@ -96,7 +96,7 @@ class App extends React.Component {
               )
             })}
           </div>
-          <div className="fasilitas-text contrail-one">
+          <div className="fasilitas-text contrail-one" style={{overflow: 'hidden'}}>
             <p data-aos='slide-left' data-aos-duration='1500' data-aos-easing='ease-in-cubic' className="center">Sangat terbuka untuk semua pihak, yang ingin berkolaborasi membantu UMKM dengan memberikan berbagai hal untuk UMKM.</p>
             <p data-aos='slide-right' data-aos-duration='1500' data-aos-easing='ease-in-cubic' className="center">Baik berupa free endorse untuk UMKM, tools digital marketing, pendampingan berkelanjutan, exclusive mentoring, Dana untuk praktek iklan para UMKM, dll.</p>
             <p data-aos='slide-down' data-aos-duration='1500' data-aos-easing='ease-in' className="center">Silakan hubungi kami di <a href="mailto: halo@agungprasetyo.id">halo@agungprasetyo.id</a></p>
