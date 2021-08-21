@@ -22,9 +22,15 @@
     .judul{
         font-size: 16pt;
     }
+    .center{
+        text-align: center;
+    }
+    .judul-ke2{
+        font-size: 14pt;
+    }
     .subjudul{
         font-size: 13pt;
-        text-align: center;
+        margin: 0 5px;
     }
     .card-text h3{
         font-size: 12pt;
@@ -35,11 +41,16 @@
 }
 @media screen and (min-width: 576px) {
     .judul{
-        font-size: 18pt;
+        font-size: 25pt;
+    }
+    .center{
+        text-align: center;
+    }
+    .judul-ke2{
+        font-size: 20pt;
     }
     .subjudul{
         font-size: 13pt;
-        text-align: center;
     }
     .card-text h3{
         font-size: 13pt;

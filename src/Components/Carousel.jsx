@@ -28,8 +28,8 @@ SwiperCore.use([Autoplay])
 
 export default function Carousel() {
     const breakpoints = {
-        250: {
-            width: 576,
+        200: {
+            width: 300,
             slidesPerView: 1,
         },
         400: {
@@ -44,11 +44,12 @@ export default function Carousel() {
             slidesPerView={3}
             loop={true}
             autoplay={{ delay: 2000, disableOnInteraction: false }}
-            style={{ justifyContent: 'center', display: 'flex' }}
+            // style={{ justifyContent: 'center', display: 'flex' }}
         >
             {listOfData.map((item, index) => {
                 return (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} style={{
+                    }}>
                         <Card img={item} />
                     </SwiperSlide>
                 )

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
 /* Landing */
 .landing-container .landing {
  display: grid;
@@ -41,25 +43,41 @@
 .grid-layout > div {
  display: grid;
 }
+.grid-layout .register .coutdown p{
+  font-family: 'Aclonica', sans-serif;
+}
 
 /* Card */
 .card {
  display: grid;
  text-align: center;
- background-color: #C7DAD9;
+ /* background-color: #C7DAD9; */
  border-radius: 20px;
  padding: 15px;
  width: 10rem;
  overflow: hidden;
- margin: 0 5px;
+ margin: 0 10px;
 }
 .card .card-header {
  margin: 0 auto;
 }
 .card .card-header img {
  width: 100%;
+ border-radius: 100%;
 }
-
+.landing-container .landing > div:nth-child(1) > div p{
+  font-family: 'Aclonica', sans-serif;
+}
+@media screen and (max-width: 310px){
+  .card{
+    margin: 0 4rem!important;
+  }
+}
+@media screen and (max-width: 370px){
+  .card{
+    margin: 0 5.5rem;
+  }
+}
 @media screen and (max-width: 576px) {
  /* Landing */
  .landing-container {
@@ -102,7 +120,11 @@
  /* Gallery */
  .App .gallery {
   padding: 10px 3rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+ }
+ .App .support{
+  padding: 10px 3rem;
+  grid-template-columns: 1fr;
  }
  /* Grid layout */
  .grid-layout > .keuntungan {
@@ -110,16 +132,21 @@
  }
  .grid-layout > .fasilitas,
  .grid-layout > .bonus {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
  }
  .grid-layout > .fasilitas > div {
   width: 35%;
-  margin: 0 auto;
+  margin: 20px auto;
+ }
+ .grid-layout .fasilitas-text{
+   margin: 0 10px;
  }
  .grid-layout > .fasilitas > div img,
  .grid-layout > .bonus > div img {
-  width: 100%;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
  }
  .grid-layout > .bonus > div {
   width: 30%;
@@ -133,12 +160,20 @@
  .grid-layout > .register {
   margin: 0 auto;
  }
- .grid-layout > .register > div p {
+ .grid-layout > .register .coutdown{
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+}
+ .grid-layout > .register .coutdown p {
   justify-content: space-evenly;
   padding: 10px 20px;
   background: #45a8e0;
   margin: 0 20px;
   display: flex;
+ }
+ .grid-layout > .register .last-text p{
+   padding: 10px;
  }
  .grid-layout > .register > div.register-button {
   display: flex;
@@ -149,6 +184,13 @@
   background: #db6262;
   padding: 10px 2rem;
  }
+
+ .support .img img{
+  width: 8rem;
+  display: block;
+  margin: 0 auto;
+}
+ 
 }
 @media screen and (min-width: 576px) {
  /* Landing */
@@ -189,7 +231,8 @@
  /* Gallery */
  .App .gallery {
   padding: 10px 3rem;
-  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
  }
  /* Gridl ayout */
  .grid-layout > .keuntungan {
@@ -199,31 +242,29 @@
  }
  .grid-layout > .fasilitas,
  .grid-layout > .bonus {
-  grid-template-columns: repeat(3, 150px);
-  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
   gap: 10px;
  }
  .grid-layout > .fasilitas > div,
  .grid-layout > .bonus > div {
-  width: 35%;
+  width: 100px;
+  padding: 10px 30px;
   margin: 0 auto;
  }
  .grid-layout > .fasilitas > div img,
  .grid-layout > .bonus > div img {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
  }
  .grid-layout > .bonus > div {
-  /* width: 50%; */
   color: white;
   background: #db6262;
   border-radius: 20px;
   margin: 0 auto;
   padding: 15px 30px;
  }
- /* Card */
- /* .card{
-
- } */
  .card .card-header {
   width: 100%;
  }
@@ -234,12 +275,20 @@
  .grid-layout > .register {
   margin: 0 auto;
  }
- .grid-layout > .register > div p {
+ .grid-layout > .register .coutdown{
+   display: grid;
+   width: 500px;
+   margin: 0 auto;
+ }
+ .grid-layout > .register .coutdown p {
   justify-content: space-evenly;
   padding: 10px 20px;
   background: #45a8e0;
   margin: 0 20px;
   display: flex;
+ }
+ .grid-layout > .register .last-text p{
+   padding: 20px;
  }
  .grid-layout > .register > div.register-button {
   padding: 20px;
@@ -249,6 +298,11 @@
   background: #db6262;
   padding: 10px 9rem;
  }
+ .support .img img{
+  width: 20rem;
+  display: block;
+  margin: 0 auto;
+}
 }
 @media screen and (min-width: 992px) {
  /* Landing Page */
@@ -258,6 +312,7 @@
  }
  .landing-container .landing {
   grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
  }
  .landing-container .landing > div:nth-child(1) {
   display: grid;
@@ -279,33 +334,58 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
- }
- .landing-container .landing > div:nth-child(2) > div:nth-child(1) {
-  width: 50%;
+}
+.landing-container .landing > div:nth-child(2) > div:nth-child(1) {
+   /* background: hotpink; */
+  width: 100%;
  }
  .landing-container .landing > div:nth-child(2) > div:nth-child(1) img {
   width: 100%;
  }
+ .landing-container .landing > div:nth-child(2) > div:nth-child(2) a {
+  margin: 0 auto;
+  display: block;
+ }
  /* Gallery */
  .App .gallery {
   padding: 10px 3rem;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 200px);
  }
  /* Grid layout */
  .grid-layout > .keuntungan {
   grid-template-columns: repeat(2, 1fr);
  }
  .grid-layout > .fasilitas {
-  grid-template-columns: repeat(3, 200px);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   padding: 0 10rem;
   gap: 10px;
  }
  .grid-layout > .fasilitas > div {
-  width: 25%;
+  width: 100px;
+  padding: 20px 30px;
   margin: 0 auto;
  }
  .grid-layout > .fasilitas > div img {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
  }
+
+ .support .img img{
+   width: 20rem;
+   display: block;
+   margin: 0 auto;
+ }
+ .grid-layout > .register .coutdown{
+  display: grid;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+.grid-layout > .register .last-text > p{
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+}
 }
