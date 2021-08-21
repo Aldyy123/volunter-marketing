@@ -2,7 +2,7 @@
 const timeOut = () => <p>Waktu sudah habis</p>
 const timeIn = ({days, hours, minutes, seconds}) => {
     return (
-        <div className="coutdown">
+        <div className="coutdown coda">
             <p>
                 <span>{days}</span>
                 <span>{hours}</span>

@@ -26,7 +26,7 @@ class App extends React.Component {
           subtitle={'Program ini 100% gratis serta didampingi oleh mentor yang berpengalaman dibidangnya.'}
           backgroundColor={'#c7dad9'}
         >
-          <div className='keuntungan'>
+          <div className='keuntungan coda'>
             <ul>
               <li>Buat Bisnismu Go-Digital</li>
               <li>Ilmu Copywriting</li>
@@ -82,7 +82,7 @@ class App extends React.Component {
           subtitle={'Meskipun program ini gratis, namun banyak bonus yang bisa teman-teman dapatkan juga.'}
           backgroundColor={'#c7dad9'}
         >
-          <div className='fasilitas'>
+          <div className='fasilitas coda'>
             {listOfData.map((e) => {
               return (
                 <div key={e.img}>
@@ -92,7 +92,7 @@ class App extends React.Component {
               )
             })}
           </div>
-          <div className="fasilitas-text">
+          <div className="fasilitas-text contrail-one">
             <p className="center">Sangat terbuka untuk semua pihak, yang ingin berkolaborasi membantu UMKM dengan memberikan berbagai hal untuk UMKM.</p>
             <p className="center">Baik berupa free endorse untuk UMKM, tools digital marketing, pendampingan berkelanjutan, exclusive mentoring, Dana untuk praktek iklan para UMKM, dll.</p>
             <p className="center">Silakan hubungi kami di <a href="mailto: halo@agungprasetyo.id">halo@agungprasetyo.id</a></p>
@@ -122,7 +122,7 @@ class App extends React.Component {
           </div>
         </FotoMedia>
         <TemplateGrid title={'Daftar Sekarang Juga!'} backgroundColor={'#c7dad9'}>
-          <div className='register'>
+          <div className='register coda'>
             <p className='text-center'>
               Ayo daftar segera mumpung gratis gan jangan sampe ketinggalan, rugi loo
             </p>

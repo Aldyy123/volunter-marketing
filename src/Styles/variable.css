@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&family=Contrail+One&family=Kalam&family=Rampart+One&display=swap');
+
+.rampart-one{
+    font-family: 'Rampart One', cursive;
+}
+.kalam{
+    font-family: 'Kalam', cursive;
+}
+.coda{
+    font-family: 'Coda', cursive;
+}
+.contrail-one{
+    font-family: 'Contrail One', cursive;
+}
 .text-center{
     text-align: center;
 }

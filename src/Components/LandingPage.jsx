@@ -9,10 +9,10 @@ export default class LandingPage extends Component {
         return (
             
             <div className="landing-container text-white">
-                <h1 className="text-center judul">30 Day Challange Digital Marketing</h1>
-                <h1 className="text-center judul-ke2">Bersama UMKM  Menuju Go Digital</h1>
+                <h1 className="text-center judul rampart-one">30 Day Challange Digital Marketing</h1>
+                <h1 className="text-center judul-ke2 rampart-one">Bersama UMKM  Menuju Go Digital</h1>
 
-                <div className="landing">
+                <div className="landing coda">
                     <div>
                         <p className="subjudul">
                         Bukan hanya membuat UMKM beralih ke pemasaran online. Kami juga akan memberikan pelatihan selama 30 hari full dengan total 25 lebih materi serta diisi oleh 20 mentor yang berpengalaman dibidangnya.

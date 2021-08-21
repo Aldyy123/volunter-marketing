@@ -43,10 +43,6 @@
 .grid-layout > div {
  display: grid;
 }
-.grid-layout .register .coutdown p{
-  font-family: 'Aclonica', sans-serif;
-}
-
 /* Card */
 .card {
  display: grid;
@@ -64,9 +60,6 @@
 .card .card-header img {
  width: 100%;
  border-radius: 100%;
-}
-.landing-container .landing > div:nth-child(1) > div p{
-  font-family: 'Aclonica', sans-serif;
 }
 @media screen and (max-width: 310px){
   .card{
