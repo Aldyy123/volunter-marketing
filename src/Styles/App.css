@@ -78,6 +78,11 @@
     margin: 0 5.5rem;
   }
 }
+@media screen and (max-width: 400px){
+  .card{
+    margin: 0 5.5rem;
+  }
+}
 @media screen and (max-width: 576px) {
  /* Landing */
  .landing-container {
