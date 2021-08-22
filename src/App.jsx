@@ -86,8 +86,8 @@ class App extends React.Component {
           <div className='fasilitas coda'>
             {listOfData.map((e) => {
               return (
-                <div key={e.img}>
-                  <img src={e.img} alt='s' />
+                <div key={e.img} style={{background: 'grey'}}>
+                  <img src={e.img} alt='s' style={{ width: '100px', display : 'block', margin: '0 auto'}}/>
                   <p className='text-center'>{e.text}</p>
                 </div>
               )

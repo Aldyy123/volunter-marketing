@@ -2,6 +2,7 @@ import money from '../assets/icon/money.svg'
 import servers from '../assets/icon/servers.svg'
 import certificate from '../assets/icon/certificate.svg'
 import omset from '../assets/icon/omset-naik.png' 
+import icon1 from '../assets/icon/cek.svg' 
 
 const listOfData = [
     {
@@ -22,7 +23,7 @@ const listOfData = [
 
     },
     {
-        img: certificate,
+        img: icon1,
         text : 'Promosi UMKM ke berbagai kota '
     },
     {
