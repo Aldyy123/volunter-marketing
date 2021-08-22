@@ -1,6 +1,7 @@
 import money from '../assets/icon/money.svg'
 import servers from '../assets/icon/servers.svg'
 import certificate from '../assets/icon/certificate.svg'
+import omset from '../assets/icon/omset-naik.png' 
 
 const listOfData = [
     {
@@ -17,7 +18,7 @@ const listOfData = [
     },
     {
         text: 'Free Endorse dari influencer',
-        img: certificate,
+        img: omset,
 
     },
     {
