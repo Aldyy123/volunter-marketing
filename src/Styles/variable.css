@@ -55,6 +55,26 @@
 }
 @media screen and (min-width: 576px) {
     .judul{
+        font-size: 22pt;
+    }
+    .center{
+        text-align: center;
+    }
+    .judul-ke2{
+        font-size: 18pt;
+    }
+    .subjudul{
+        font-size: 13pt;
+    }
+    .card-text h3{
+        font-size: 13pt;
+    }
+    .card-text p{
+        font-size: 11pt;
+    }
+}
+@media screen and (min-width: 992px) {
+    .judul{
         font-size: 25pt;
     }
     .center{

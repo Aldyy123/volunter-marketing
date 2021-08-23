@@ -1,41 +1,44 @@
-import money from '../assets/icon/money.svg'
-import servers from '../assets/icon/servers.svg'
-import certificate from '../assets/icon/certificate.svg'
-import omset from '../assets/icon/omset-naik.png' 
-import icon1 from '../assets/icon/cek.svg' 
+import icon1 from '../assets/icon/icon-1.svg'; 
+import icon2 from '../assets/icon/icon-2.svg'; 
+import icon3 from '../assets/icon/icon-3.svg'; 
+import icon4 from '../assets/icon/icon-4.svg'; 
+import icon5 from '../assets/icon/icon-5.svg'; 
+import icon6 from '../assets/icon/icon-6.svg'; 
+import icon7 from '../assets/icon/icon-7.svg'; 
+import icon8 from '../assets/icon/icon-8.svg'; 
 
 const listOfData = [
     {
-        img: money,
+        img: icon1,
         text: 'Check List untuk UMKM GO Digital'
     },
     {
-        img: servers,
+        img: icon2,
         text : 'Modul Materi'
     },
     {
-        img: certificate,
+        img: icon3,
         text : 'Domain (.com) & hosting gratis'
     },
     {
         text: 'Free Endorse dari influencer',
-        img: omset,
+        img: icon4,
 
     },
     {
-        img: icon1,
+        img: icon5,
         text : 'Promosi UMKM ke berbagai kota '
     },
     {
-        img: certificate,
+        img: icon6,
         text: 'Canva Premium'
     },
     {
-        img: certificate,
+        img: icon7,
         text: 'Pendampingan Berkelanjutan'
     },
     {
-        img: certificate,
+        img: icon8,
         text: 'Free Akses Grup Networking'
     }
 ]

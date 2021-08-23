@@ -86,14 +86,14 @@ class App extends React.Component {
           <div className='fasilitas coda'>
             {listOfData.map((e) => {
               return (
-                <div key={e.img} style={{background: 'grey'}}>
+                <div key={e.img}>
                   <img src={e.img} alt='s' style={{ width: '100px', display : 'block', margin: '0 auto'}}/>
                   <p className='text-center'>{e.text}</p>
                 </div>
               )
             })}
           </div>
-          <div className="fasilitas-text contrail-one" style={{overflow: 'hidden'}}>
+          <div className="fasilitas-text contrail-one" style={{overflow: 'hidden', padding: '1rem'}}>
             <p className="center">Sangat terbuka untuk semua pihak, yang ingin berkolaborasi membantu UMKM dengan memberikan berbagai hal untuk UMKM.</p>
             <p className="center">Baik berupa free endorse untuk UMKM, tools digital marketing, pendampingan berkelanjutan, exclusive mentoring, Dana untuk praktek iklan para UMKM, dll.</p>
             <p className="center">Silakan hubungi kami di <a href="mailto: halo@agungprasetyo.id">halo@agungprasetyo.id</a></p>
